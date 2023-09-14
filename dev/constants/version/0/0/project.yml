@@ -1,0 +1,5 @@
+init_file: __init__.py # relative to `wh_dev.yml:files/project`
+const_dir: constants # relative to `wh_dev.yml:files/project`
+lang_dir: '{const_dir}/lang'
+cp: {}
+docstrings: {}

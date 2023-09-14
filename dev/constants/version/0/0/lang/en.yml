@@ -1,0 +1,35 @@
+# cSpell:locale en,en
+metadata:
+  version: 0.0.1
+  # Translation contributors' information, for attribution purposes.
+  contributors:
+    - name: whi~nyaan!
+      desc: |-
+        Hello, I'm whi~nyaan!, author of this application.
+        I hope that you like this app!
+      links:
+        anilist: whinyaan             # Anilist username            https://anilist.co/user/whinyaan
+        discord:                      # Discord Accounts            multiple accounts allowed! (dict)
+          whi_ne#1119:                # Discord tag                 as is
+            848092597822160907        # Discord user snowflake      https://discord.com/users/848092597822160907
+        email:                        # Electronic mail addresses   multiple emails allowed! (list)
+          - whinyaan@protonmail.com   # Electronic mail address     mailto:whinyaan@protonmail.com
+          - whinyaan@gmail.com        # Alternative address         mailto:whinyaan@gmail.com
+        github: whinee                # Github username             https://github.com/whinee
+        reddit: whi-nyaan             # Reddit username             https://reddit.com/user/whi-nyaan
+        twitter: whi_nyaan            # Twitter username            https://twitter.com/whi_nyaan
+
+text:
+
+  common:
+
+    info:
+
+      desc:
+        str: |-
+          This is for our family business. DON'T YOU DARE USE THIS!
+
+      motto:
+        str: |-
+          sexPLOOOOOSION!
+        desc: motto of the project

@@ -1,0 +1,56 @@
+<h1 align="center" style="font-weight: bold">
+    {{project/name}}
+</h1>
+
+<p align="center">
+    <a href="https://github.com/{{github/organization}}/{{github/repo_name}}/issues">
+        <img src="https://img.shields.io/github/issues/{{github/organization}}/{{github/repo_name}}.svg?style=for-the-badge&logo=data:image/png;base64,{{icons/png_b64_issues}}">
+    </a>
+    <a href="https://github.com/{{github/organization}}/{{github/repo_name}}/network/members">
+        <img src="https://img.shields.io/github/forks/{{github/organization}}/{{github/repo_name}}.svg?style=for-the-badge&logo=data:image/png;base64,{{icons/png_b64_forks}}">
+    </a>
+    <a href="https://github.com/{{github/organization}}/{{github/repo_name}}/stargazers">
+        <img src="https://img.shields.io/github/stars/{{github/organization}}/{{github/repo_name}}.svg?style=for-the-badge&logo=data:image/png;base64,{{icons/png_b64_stars}}">
+    </a>
+    <a href="https://github.com/{{github/organization}}/{{github/repo_name}}/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/{{github/organization}}/{{github/repo_name}}.svg?style=for-the-badge&logo=data:image/png;base64,{{icons/png_b64_contributors}}">
+    </a>
+</p>
+<p align="center">
+    <a href="license.md">
+        <img src="https://img.shields.io/badge/LICENSE-A31F34?style=for-the-badge&logoWidth=25&logo=data:image/png;base64,{{icons/png_b64_license}}">
+    </a>
+    <a href="https://wakatime.com/badge/user/{{badges/wakatime/uid}}/project/{{badges/wakatime/pid}}">
+        <img alt="wakatime" src="https://wakatime.com/badge/user/{{badges/wakatime/uid}}/project/{{badges/wakatime/pid}}.svg?style=for-the-badge">
+    </a>
+    <a href="https://app.codacy.com/gh/{{github/organization}}/{{github/repo_name}}/dashboard">
+        <img alt="Codacy Badge" src="https://img.shields.io/codacy/grade/{{badges/codacy}}?style=for-the-badge&logo=data:image/png;base64,{{icons/png_b64_code}}">
+    </a>
+</p>
+<p align="center">
+    <a target="_blank" href="https://discord.com/invite/{{author/discord/server/inv}}">
+        <img src="https://invidget.switchblade.xyz/{{author/discord/server/inv}}">
+    </a>
+</p>
+
+---
+
+{{text/motto}}
+
+---
+
+Website: [{{site}}](https://{{site}})
+
+Github: [github.com/{{github/organization}}/{{github/repo_name}}](https://github.com/{{github/organization}}/{{github/repo_name}})
+
+PyPi: [pypi.org/project/{{project/pip}}](https://pypi.org/project/{{project/pip}}/)
+
+---
+
+To be updated, be sure to watch this repository and join the [Discord Support Server ({{author/discord/server/name}})](https://discord.com/invite/{{author/discord/server/inv}}) for this and other projects.
+
+Interested in commissioning projects? Inquire through Discord(<a target="_blank" href="https://discord.com/users/{{author/discord/uid}}">{{author/discord/acc}}</a>) or through e-mail(<a target="_blank" href="mailto:{{author/email}}">{{author/email}}</a>). Price starts at 30 USD.
+
+## Important
+
+This is for our family business. DON'T YOU DARE USE THIS!

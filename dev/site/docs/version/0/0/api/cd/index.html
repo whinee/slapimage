@@ -1,0 +1,1147 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Bloated python utility library">
+      
+      
+        <meta name="author" content="whi~nyaan!">
+      
+      
+        <link rel="canonical" href="https://whsn.whinyaan.xyz/docs/version/0/0/api/cd/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+    
+    
+      
+        <title>whinesnips.cd - whinesnips</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="whinesnips.cd - whinesnips" >
+      
+        <meta  property="og:description"  content="Bloated python utility library" >
+      
+        <meta  property="og:image"  content="https://whsn.whinyaan.xyz/assets/images/social/docs/version/0/0/api/cd.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://whsn.whinyaan.xyz/docs/version/0/0/api/cd/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="whinesnips.cd - whinesnips" >
+      
+        <meta  name="twitter:description"  content="Bloated python utility library" >
+      
+        <meta  name="twitter:image"  content="https://whsn.whinyaan.xyz/assets/images/social/docs/version/0/0/api/cd.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#whinesnipscd" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../../.." title="whinesnips" class="md-header__button md-logo" aria-label="whinesnips" data-md-component="logo">
+      
+  <img src="../../../../../../assets/images/icons/logo-min.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            whinesnips
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              whinesnips.cd
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/whinee/whinesnips" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/faq" class="md-tabs__link">
+        
+  
+    
+  
+  Frequently Asked Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/license" class="md-tabs__link">
+        
+  
+    
+  
+  License Agreement
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/changelog" class="md-tabs__link">
+        
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/latest-bump" class="md-tabs__link">
+        
+  
+    
+  
+  Latest Bump
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/latest-commit" class="md-tabs__link">
+        
+  
+    
+  
+  Latest Commit
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/notes-to-self" class="md-tabs__link">
+        
+  
+    
+  
+  Notes to self
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../../.." title="whinesnips" class="md-nav__button md-logo" aria-label="whinesnips" data-md-component="logo">
+      
+  <img src="../../../../../../assets/images/icons/logo-min.png" alt="logo">
+
+    </a>
+    whinesnips
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/whinee/whinesnips" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/faq" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frequently Asked Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/license" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License Agreement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/changelog" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/latest-bump" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Latest Bump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/latest-commit" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Latest Commit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/notes-to-self" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes to self
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="whinesnipscd"><strong><a href="../">whinesnips</a>.<a href="./">cd</a></strong></h1>
+<h2 id="rationale">Rationale</h2>
+<p>Well... I kinda' do some web scraping here and there, and this thing's real useful.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Let it be known that to this day, I am still trying to document the shittiness of this module.</p>
+<p>Good Lord, have mercy on me huhuuuuu</p>
+<h2 id="usage">Usage</h2>
+<h3 id="initialization">Initialization</h3>
+<ul>
+<li>
+<p>Import the module.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="err">$</span><span class="p">{</span><span class="n">project_name</span><span class="p">}</span><span class="o">.</span><span class="n">cd</span> <span class="kn">import</span> <span class="nn">CustomDict</span>
+</code></pre></div>
+</li>
+<li>
+<p>Initialize empty dictionary...</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># {}</span>
+</code></pre></div>
+<p>or from an existing dictionary</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># {&quot;a&quot;: 1, &quot;b&quot;: 2}</span>
+</code></pre></div>
+</li>
+</ul>
+<h3 id="insertion">Insertion</h3>
+<ul>
+<li>
+<p>You can do it the old-fashioned way...</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">test</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div>
+<p>Or you can use the <code>insert</code> method</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+<p>Both methods yield the same results</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">])</span> <span class="c1"># 3</span>
+</code></pre></div>
+</li>
+<li>
+<p>You can also use a path-like string to insert a value.</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">{}})</span>
+<span class="n">test</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s2">&quot;a/b/c&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># {&quot;a&quot;: {&quot;b&quot;: {&quot;c&quot;: 3}}}</span>
+</code></pre></div>
+<p>Yes, it created the keys when they are non-existent. You probably would not want this, but I certainly do. Adding a flag to disable this behavior will only add complexity to it. And, this is my library of snippets to begin with, so just deal with it.</p>
+<p>No one would even probably read this, other than the author itself.</p>
+</li>
+<li>
+<p>When the path's value is a list, it will append the given value to the list.</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+<span class="n">test</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s2">&quot;a/b/c&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># {&quot;a&quot;: [1, 2, 3, 4]}</span>
+</code></pre></div>
+</li>
+</ul>
+<h3 id="getting-values">Getting Values</h3>
+<ul>
+<li>
+<p>You can do it the old-fashioned way...</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">])</span> <span class="c1"># 1</span>
+</code></pre></div>
+<p>Or you can use the <code>dir</code> method</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">dir</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">))</span> <span class="c1"># 1</span>
+</code></pre></div>
+</li>
+<li>
+<p>You can also use a path-like string to get a value.</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}}})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">dir</span><span class="p">(</span><span class="s2">&quot;a/b/c&quot;</span><span class="p">))</span> <span class="c1"># 3</span>
+</code></pre></div>
+</li>
+<li>
+<p>The <code>dir</code> method will also return a <code>CustomDict</code> object if the value is a dictionary.</p>
+</li>
+</ul>
+<p>Well, that's a really rudimentary way to document it, but it works for me, and that is all that matters.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Hereunder mermaid graphs that explains how the logic of each functions in the class <code>CustomDict</code> works.</p>
+<h2 id="traverse">traverse</h2>
+<pre class="mermaid"><code>%% id_tag
+flowchart LR
+    q[[A]] --&gt; n
+    args[/path, value/] --&gt; d["elem = self"] --&gt; n["key = path[0]&lt;br&gt;ls_idx = int(key)"] --&gt; a{elem isDict?}
+        a --&gt; |no| g{elem is Sized?}
+                g ------&gt; |no| l(["CDEA.TypeError.CurrentElementNotDictListOrTuple"]):::error
+                g --&gt; |yes| h{"key not empty?"}
+                    h ------&gt; |no| m(["CDEA.IndexError.EmptyString"]):::error
+                    h --&gt; |yes| o{key is int?}
+                        o ------&gt; |no| p(["CDEA.IndexError.NotInteger"]):::error
+                        o --&gt; |yes| i{key in range?}
+                        i -----&gt; |no| w["(2, {'idx': idx, 'ls_idx': ls_idx, 'len_iter': len_iter})"]:::success
+                        i --&gt; |yes| c
+        a --&gt; |yes| e{"(key not in elem)&lt;br&gt;and&lt;br&gt;(ls_idx is valid)?"}
+            e --&gt; |no| b
+                b --&gt; |yes| c{path fully&lt;br&gt;traversed?}
+                    c --&gt; |no| y["elem = elem[key]&lt;br&gt;path = path[1:]"]:::success --&gt; j[[A]]
+                    c --&gt; |yes| x["(0, {'value': typed_elem[key], ...})"]:::success
+                b -----&gt; |no| f["(1, {'idx': idx})"]:::success
+            e --&gt; |yes| k[key = ls_idx] --&gt; b{key in&lt;br&gt;elem}
+
+subgraph Sized
+h;o;i
+end
+
+subgraph dict
+e;k;b
+end
+
+subgraph returns
+w;x;f
+end
+
+subgraph raises
+l;m;p
+end
+
+    classDef success color:#83ce9e,stroke:#6fc890
+    classDef error color:#f3626b,stroke:#f14652</code></pre>
+<h2 id="dir">dir</h2>
+<pre class="mermaid"><code>flowchart LR
+    args[/path, de/] --&gt; a{path is None?}
+        a --&gt; |yes| b[/self/]:::success
+        a --&gt; |no| c{path == '' ?}
+            c --&gt; |yes| d{'' in self?}
+                d -----&gt; |no| b
+                d -----&gt; |yes| e[/"self['']"/]:::success
+            c --&gt; |no| f[["state, op = traverse(path)"]]
+
+    f --&gt; g{state == 0?}
+        g ----&gt; |yes| h[/"op[value]"/]:::success
+
+    g --&gt; |no| i{state == 1?}
+        i --&gt; |yes| j{de is not None?}
+            j --&gt; |yes| k[/"de"/]:::success
+            j --&gt; |no| l(["CDEA.KeyError.NotInElement"]):::error
+
+    i --&gt; |no| m{state == 2?}
+        m --&gt; |yes| n(["CDEA.IndexError.OutOfRange"]):::error
+
+    m --&gt; |no| o(["CDEI.StateUnexpected"]):::error
+
+subgraph returns
+b;e;h;k
+end
+
+subgraph raises
+l;n;o
+end
+
+classDef success color:#83ce9e,stroke:#6fc890
+classDef error color:#f3626b,stroke:#f14652</code></pre>
+<h2 id="modify">modify</h2>
+<pre class="mermaid"><code>flowchart LR
+    args[/path, value/] --&gt; a{path is None?}
+        a --&gt; |yes| b[self]:::success
+        a --&gt; |no| c{value is None?}
+            c --&gt; |yes| b
+            c --&gt; |no| d[["state, op = traverse(path)"]]
+
+    d --&gt; e{state == 0?}
+        e --&gt; |yes| f["last_key = path.pop()&lt;br&gt;idx = 0&lt;br&gt;current = self"] --&gt;
+        j{path fully&lt;br&gt;traversed?}
+        j --&gt; |yes| l["current[last_key] = value"] --&gt; b
+        j --&gt;
+        |no| h["idx += 1&lt;br&gt;key = path[idx]&lt;br&gt;current = current[key]"] --&gt; j
+
+    e --&gt; |no| m{state == 1?}
+        m ----&gt; |yes| n(["CDEA.KeyError.NotInElement"]):::error
+
+    m --&gt; |no| o{state == 2?}
+        o ---&gt; |yes| p(["CDEA.IndexError.OutOfRange"]):::error
+
+    o ---&gt; |no| q(["CDEI.StateUnexpected"]):::error
+
+
+subgraph returns
+b
+end
+
+subgraph raises
+n;p;q
+end
+
+classDef success color:#83ce9e,stroke:#6fc890
+classDef error color:#f3626b,stroke:#f14652</code></pre>
+<h2 id="insert">insert</h2>
+<pre class="mermaid"><code>%% id_tag
+flowchart TD
+    args[/path, value/]
+    args --&gt; a["*path, last_key = path.split(sep)&lt;br&gt;lk_ls_idx = whsn.utils.utils.str2int(last_key)"]
+    a --&gt; b{"path_ls not empty?"}
+        b --&gt; |yes| c["path = sep.join(path_ls)&lt;br&gt;state, op = self.traverse(path)&lt;br&gt;keys = op['key_type_kv'].keys()&lt;br&gt;second_last_key = keys.pop()"]
+            l --&gt; |yes| m([CDEA.TypeError.CurrentElementNotListOrTuple]):::error
+            d --&gt; |no| ad{state == 1?}
+                ad --------&gt; |yes| ae([CDEA.KeyError.NotInElement]):::error
+                ad --&gt; |no| af{state == 2?}
+                    af -------&gt; |yes| ag([CDEA.IndexError.OutOfRange]):::error
+                    af -------&gt; |no| ai([CDEI.StateUnexpected]):::error
+            c --&gt; d{state == 0?}
+                d --&gt; |yes| i["iter_idx=0"]
+                    i --&gt; j{keys fully iterated?}
+                        j --&gt; |yes| r{"is the second&lt;br&gt;last item a dict?"}
+                        j --&gt; |no| k["current = current[iter_idx]&lt;br&gt;iter_idx += 1"] --&gt; j
+                            r --&gt; |no| w{"is the second last&lt;br&gt;item a Sized iterable?"}
+                                w --&gt; |yes| x{"is last_key empty?"}
+                                    x ----&gt; |yes| y([CDEA.IndexError.EmptyString]):::error
+                                    x --&gt; |no| z{"is last_key None?"}
+                                        z ---&gt; |yes| aa([CDEA.IndexError.NotInteger]):::error
+                                        z --&gt; |no| ab["current[second_last_key] = value"] --&gt; q
+                            r --&gt; |yes| s{strict?}
+                                s --&gt; |yes| m
+                                s --&gt; |no| t{"is (last_key not in current)&lt;br&gt;and&lt;br&gt;(lk_ls_idx is not None)"}
+                                    t --&gt; |yes| u["last_key = lk_ls_idx"] --&gt; v
+                                    t --&gt; |no| v["current[second_last_key][last_key] = value"] --&gt; q
+        b --&gt; |no| l{strict?}
+            l --&gt; |no| n{"is (last_key not in current)&lt;br&gt;and&lt;br&gt;(lk_ls_idx is not None)"}
+                n --&gt; |yes| o[last_key = lk_ls_idx] --&gt; p
+                n --&gt; |no| p["current[last_key] = value"]
+                    p --&gt; q[self]:::success
+
+subgraph returns
+    q
+end
+
+subgraph raises
+    m;y;aa;ae;ag;ai
+end
+
+    classDef success color:#83ce9e,stroke:#6fc890
+    classDef error color:#f3626b,stroke:#f14652</code></pre>
+<h3><b><a href="#func" id="func">Functions</a></b></h3>
+
+<h3><b><i><a href="#func-flatten_element" id="func-flatten_element">flatten_element</a></i></b></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">elem</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]],</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">whinesnips</span><span class="o">.</span><span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span>
+</code></pre></div>
+<h3><b><a href="#class" id="class">Classes</a></b></h3>
+
+<h3><b><i><a href="#class-BEHAVIOR" id="class-BEHAVIOR">BEHAVIOR</a></i></b></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+</code></pre></div>
+<p>Create a collection of name/value pairs.</p>
+<p>Example enumeration:</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>class Color(Enum):
+...     RED = 1
+...     BLUE = 2
+...     GREEN = 3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Access them by:</p>
+<ul>
+<li>attribute access::</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Color.RED
+<Color.RED: 1></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
+<li>value lookup:</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Color(1)
+<Color.RED: 1></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
+<li>name lookup:</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Color['RED']
+<Color.RED: 1></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Enumerations can be iterated over, and know how many members they have:</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>len(Color)
+3</p>
+<p>list(Color)
+[<Color.RED: 1>, <Color.BLUE: 2>, <Color.GREEN: 3>]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Methods can be added to enumerations, and members can have their own
+attributes -- see the documentation for details.</p>
+<h3><a href="#class-BEHAVIOR-mro" id="class-BEHAVIOR-mro">Ancestors (in MRO)</a></h3>
+
+<ul>
+<li>enum.Enum</li>
+</ul>
+<h3><a href="#class-BEHAVIOR-cvar" id="class-BEHAVIOR-cvar">Class variables</a></h3>
+
+<p><code>append</code></p>
+<p><code>insert</code></p>
+<p><code>modify</code></p>
+<h3><b><i><a href="#class-CustomDict" id="class-CustomDict">CustomDict</a></i></b></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">])</span>
+</code></pre></div>
+<p>Custom dictionary.</p>
+<h3><a href="#class-CustomDict-mro" id="class-CustomDict-mro">Ancestors (in MRO)</a></h3>
+
+<ul>
+<li>builtins.dict</li>
+</ul>
+<h3><a href="#class-CustomDict-func" id="class-CustomDict-func">Methods</a></h3>
+
+<h3><i><a href="#class-CustomDict-func-append" id="class-CustomDict-func-append">append</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">whinesnips</span><span class="o">.</span><span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span>
+</code></pre></div>
+<h3><i><a href="#class-CustomDict-func-dir" id="class-CustomDict-func-dir">dir</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">de</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">Any</span>
+</code></pre></div>
+<h3><i><a href="#class-CustomDict-func-flatten" id="class-CustomDict-func-flatten">flatten</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="n">flat_sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">whinesnips</span><span class="o">.</span><span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span>
+</code></pre></div>
+<h3><i><a href="#class-CustomDict-func-insert" id="class-CustomDict-func-insert">insert</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="n">strict</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">whinesnips</span><span class="o">.</span><span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span>
+</code></pre></div>
+<h3><i><a href="#class-CustomDict-func-modify" id="class-CustomDict-func-modify">modify</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="s1">&#39;c0VjUmVUX2NPZEUgYnkgd2hpX25l&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">whinesnips</span><span class="o">.</span><span class="n">cd</span><span class="o">.</span><span class="n">CustomDict</span>
+</code></pre></div>
+<h3><i><a href="#class-CustomDict-func-traverse" id="class-CustomDict-func-traverse">traverse</a></i></h3>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]]</span>
+</code></pre></div>
+<p>Given a path, traverse the element (self, which is a dictionary).</p>
+<p>The function returns a tuple of integer and dictionary.
+The integer is the return state. Hereunder return states,
+their description and corresponding return's description.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">State</th>
+<th style="text-align: right;">Description</th>
+<th style="text-align: left;">Return Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Path fully traversed</td>
+<td style="text-align: left;">Indexed Item</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">Path's not in element</td>
+<td style="text-align: left;">Kwargs for CDEA.KeyError.NotInElement</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">Path's current index not in range</td>
+<td style="text-align: left;">Kwargs for CDEA.IndexError.OutOfRange</td>
+</tr>
+</tbody>
+</table>
+<p>When the path is fully traversed (state 0),
+it gives out the following dictionary and the corresponding keys' types:</p>
+<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
+        <span class="s2">&quot;key_type_kv&quot;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span> <span class="o">|</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+    <span class="p">}</span>
+</code></pre></div>
+<p>Whereas:</p>
+<ul>
+<li><code>value</code> is the indexed item</li>
+<li><code>key_type_kv</code> is key-value pair (dict) of keys that are used to
+traverse the element and the type of the element traversed.
+The keys will be evaluated so that list indexes will be in integer.
+Or when an integer is used as a key in the element,
+it will also show up as such in here.
+The element type will be in string, and the only allowed ones are
+<code>dict</code>, <code>list</code> and <code>tuple</code>.</li>
+</ul>
+<p>Consider the following:</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">CustomDict</span><span class="p">({</span><span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">}],</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">])})</span>
+</code></pre></div>
+<p>When traversed with the following:</p>
+<div class="highlight"><pre><span></span><code><span class="n">test</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="s2">&quot;w/-2/+1/b&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>The following should be returned:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;key_type_kv&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="s2">&quot;dict&quot;</span><span class="p">,</span>
+         <span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;tuple&quot;</span><span class="p">,</span>
+          <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;list&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="s2">&quot;dict&quot;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><h8><b><a href="#class-CustomDict-func-traverse-args" id="class-CustomDict-func-traverse-args">Args:</a></b></h8></p>
+<pre><code>path (str): Path to traverse.
+sep (str): Seperator of the path for individual indexes.
+</code></pre>
+<p><h8><b><a href="#class-CustomDict-func-traverse-raises" id="class-CustomDict-func-traverse-raises">Raises:</a></b></h8></p>
+<pre><code>CDExceptions.API.IndexError.EmptyString:
+Raised when the currently traversed element is a list or tuple,
+and the current key is an empty string.
+CDExceptions.API.IndexError.NotInteger:
+Raised when the currently traversed element is a list or tuple,
+and the current key is not a valid integer.
+CDExceptions.API.TypeError.CurrentElementNotDictListOrTuple:
+Raised when the currently traversed element is not the last element
+to index and is not a dict, list, or tuple.
+</code></pre>
+<p><h8><b><a href="#class-CustomDict-func-traverse-returns" id="class-CustomDict-func-traverse-returns">Returns:</a></b></h8></p>
+<pre><code>tuple[int, dict[str, int]]: _description_
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 whi~nyaan!
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/whi_nyaan" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes"], "search": "../../../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+    
+  </body>
+</html>

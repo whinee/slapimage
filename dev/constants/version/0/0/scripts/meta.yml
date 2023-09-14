@@ -1,0 +1,12 @@
+variables:
+  global:
+  local:
+    desktop:
+      categories: 'Office'
+
+matrix: {}
+
+scripts:
+  publish:
+    path: 'publish.yml'
+    op_path: .github/workflows/publish.yml
